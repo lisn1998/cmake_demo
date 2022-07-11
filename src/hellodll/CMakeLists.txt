@@ -17,4 +17,5 @@ ${CMAKE_DEMO_INCLUDE}/hellodll/hellofun.h
 ${CMAKE_DEMO_INCLUDE}/hellodll/hello_exportdef.h
 ) 
 
-add_library(${PROJECT_NAME} SHARED ${hellodll_source_list})
+# add_library(${PROJECT_NAME} SHARED ${hellodll_source_list}) 
+add_library(${PROJECT_NAME}  ${hellodll_source_list}) 
