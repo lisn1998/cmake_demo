@@ -1,11 +1,10 @@
 cmake_minimum_required(VERSION 3.20.0)
 
-project(cmake_demo # 项目名称
-    VERSION 1.0.0.0 # cmake工程的版本号
-
-    # DESTINATION  "用于做cmake的实例的项目"   # 简短的描述
-    HOMEPAGE_URL "" # 主页URL
-    LANGUAGES "CXX" # 编译工程使用的语言
+project(cmake_demo                                # 项目名称
+        VERSION      1.0.0.0                      # cmake工程的版本号
+        DESCRIPTION  "用于做cmake的实例的项目"     # 简短的描述
+        LANGUAGES    "CXX"                        # 编译工程使用的语言
+        HOMEPAGE_URL "https://github.com/lisn1998/cmake_demo" # 主页URL
 )
 message(STATUS "${PROJECT_NAME}")
 
@@ -13,8 +12,12 @@ message(STATUS "${PROJECT_NAME}")
 set(CMAKE_BUILD_TYPE Debug)
 # 设置默认生成动态库
 set(BUILD_SHARED_LIBS ON)
-# 平台位数
+
+# 都编译成64位
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m64")
+
+# 平台位数
+# 为什么在红帽7.9上 CMAKE_CL_64 无法准确判断呢
 # if(CMAKE_CL_64)
 #     message(STATUS "平台位数:X64")
 #     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m64")
@@ -105,4 +108,5 @@ link_directories(${CMAKE_DEMO_BIN} ${CMAKE_DEMO_LIB})
 
 # 增加并编译子目录,放到对应目录
 add_subdirectory(hellodll)
+add_subdirectory(cexportdemodll)	
 add_subdirectory(hellomain)

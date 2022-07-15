@@ -1,7 +1,12 @@
 1.CMakeFiles文件夹能不能消除
 2.obj等编译中间文件能不能放在一个统一文件夹下
-3.如何使用cmake 参数
+3.如何使用cmake命令行参数
 4.如何install
-5.cmake是不是默认多线程编译
+
+https://blog.csdn.net/afei__/article/details/81201039
+https://blog.csdn.net/Edidaughter/article/details/113346370
+
+https://blog.csdn.net/wzj_110/article/details/116374684?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-116374684-blog-122447808.pc_relevant_aa2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-116374684-blog-122447808.pc_relevant_aa2&utm_relevant_index=8
 
 
+http://www.manongjc.com/detail/22-hilwwtqzwakvfkt.html

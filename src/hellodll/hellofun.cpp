@@ -5,6 +5,6 @@ namespace cmakeHello
 {
     void HELLO_EXPORT printInfo()
     {
-        std::cout << " hello cmake dll" << std::endl;
+        std::cout << "c++ cmakeHello printInfo" << std::endl;
     }
 }
